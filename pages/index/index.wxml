@@ -4,6 +4,21 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+
+  <view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
+  
+  <template name="staffName">
+    <view>
+      FirstName:{{firstName}},LastName:{{lastName}}.
+    </view>
+  </template> 
+  <template is="staffName" data="{{...staffA}}"></template>
+  <template is="staffName" data="{{...staffB}}"></template>
+  <template is="staffName" data="{{...staffC}}"></template>   
+  <view bindtap="click">{{count}}</view>
+  <view>{{"hello!" + name}}</view>
+
+
   <view>联系人列表</view>
   <!-- This is our View -->
 <view> Hello {{name}}! </view>

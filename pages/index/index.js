@@ -1,11 +1,16 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
-    name:"ziazan"
+    name:"ziazan",
+     count:1,
+     zero:0,
+     staffA: {firstName: 'Hulk', lastName: 'Hu'},
+    staffB: {firstName: 'Shang', lastName: 'You'},
+    staffC: {firstName: 'Gideon', lastName: 'Lin'}
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,6 +21,12 @@ Page({
   //改变名字
   changeName:function(e){
     this.setData({name:"littleFour"});
+  },
+  //加计数
+  click:function(){
+    this.setData({
+      count: this.data.count+1
+    });
   },
   onLoad: function () {
     console.log('onLoad')
@@ -43,6 +54,9 @@ Page({
   onUnload:function(){
     // 页面关闭
     console.log('onUnload')
+  },
+  onPullDownRefreash:function(){
+    console.log("不要动");
   }
 })
 

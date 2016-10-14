@@ -11,8 +11,9 @@
     "backgroundTextStyle":"light",
     "backgroundColor":"#eeeeee",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"white"
+    "navigationBarTitleText": "名片盒",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
   },
   "tabBar":{
     "color":"#000",
@@ -45,5 +46,6 @@
       "iconPath":"images/tabBar/contact.png",
       "selectedIconPath":"images/tabBar/contact.png"
     }]
-  }
+  },
+  "debug":true
 }
